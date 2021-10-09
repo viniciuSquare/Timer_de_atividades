@@ -22,6 +22,17 @@ function secondCounter() {
   }
 }
 
+// RETORNAR TEMPO ATUAL DO TIMER
+function getTime() {
+  let min = document.querySelector("#min").textContent;
+  let seg = document.querySelector("#seg").textContent;
+
+  min = min.padStart(2, "0")
+  seg = seg.padStart(2, "0")
+  
+  return (min + ":" + seg);
+}
+
 // Função que cria elementos 
 const addTask = (task) => {
   let taskContainer = document.createElement('li')
@@ -47,16 +58,6 @@ const addTask = (task) => {
   document.querySelector("#min").textContent = "00";
 }
 
-// RETORNAR TEMPO ATUAL DO TIMER
-function getTime() {
-  let min = document.querySelector("#min").textContent;
-  let seg = document.querySelector("#seg").textContent;
-
-  min = min.padStart(2, "0")
-  seg = seg.padStart(2, "0")
-  
-  return (min + ":" + seg);
-}
 
 // EVENT LISTENERS - Botões iniciar / parar
 play.addEventListener("click", ({target})=>{ 
@@ -82,6 +83,6 @@ stop.addEventListener("click", ({target})=>{
   
   // Adiciona conteúdo à DOM
   addTask({ title, time })
-  
+
   console.log("END")
 })
