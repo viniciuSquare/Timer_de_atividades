@@ -18,6 +18,30 @@ body {
 
 }
 
+.full-w {  
+  width: 100%;
+  background: rgb(196, 196, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+
+}
+
+.full-w p{  
+  color: rgba(26, 25, 25, 0.658);
+}
+
+#title {
+  padding-left: 3rem;
+  align-self: center;
+}
+
+img, svg {
+  max-height: 2rem;
+  margin-right: 1rem;
+}
+
 .container {
   width: 100%;
 }
