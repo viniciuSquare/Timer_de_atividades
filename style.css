@@ -13,6 +13,15 @@ body {
   align-items: center;
 }
 
+li {
+  list-style: none;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+}
+
 .head {
   display: flex;
 
@@ -23,9 +32,13 @@ body {
   background: rgb(196, 196, 255);
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 3rem;
   height: 8vh;
 
+}
+.full-w h2{  
+  color: rgba(54, 54, 54, 0.247);  
 }
 
 .full-w p{  
@@ -97,3 +110,45 @@ button, input {
   height: 2.8rem;
 }
 
+
+/* LISTAGEM DE TAREFAS */
+#content {
+  display: flex;
+  flex-direction: column;
+  
+  width: 600px;
+}
+
+#task-list {
+  padding: 2rem 20px;
+
+  
+  max-height: 70vh;
+  overflow-y: auto;
+  
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 5rem;
+
+  margin-bottom: 1.25rem;
+  
+  width: 100%;
+  background: rgba(128, 128, 128, 0.185);
+  box-shadow: 0px 1px 10px 3px rgba(52, 54, 59, 0.18);
+
+  border-radius: 10px;
+}
+.task-item h2 {
+  font-size: 1.2rem;
+  color: #535151;
+}
+
+.task-item p {
+  font-size: 1.5rem;
+
+}
