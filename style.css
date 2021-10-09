@@ -24,7 +24,15 @@ footer {
 
 .head {
   display: flex;
+  
+}
 
+.head img, .head svg, .head h2 {
+  opacity: 0.8;
+
+}
+.head img:hover, .head svg:hover, .head h2:hover {
+  opacity: 1;
 }
 
 .full-w {  
@@ -38,7 +46,7 @@ footer {
 
 }
 .full-w h2{  
-  color: rgba(54, 54, 54, 0.247);  
+  color: rgb(54, 54, 54);  
 }
 
 .full-w p{  
@@ -46,7 +54,6 @@ footer {
 }
 
 #title {
-  padding-left: 3rem;
   align-self: center;
 }
 
@@ -143,6 +150,7 @@ button, input {
 
   border-radius: 10px;
 }
+
 .task-item h2 {
   font-size: 1.2rem;
   color: #535151;
@@ -150,5 +158,4 @@ button, input {
 
 .task-item p {
   font-size: 1.5rem;
-
 }
